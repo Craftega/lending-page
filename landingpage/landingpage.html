@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>AtrixNodest landingpage</title>
+  <link rel="stylesheet" href="landingpage.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">🟣</span>
+      AtrixNodes
+    </a>
+
+    <div class="nav-links">
+      <div class="has-dropdown">
+        <a href="#">Products <span class="chevron">▾</span></a>
+        <div class="dropdown">
+          <a href="#">Hosting</a>
+          <a href="#">Backups</a>
+          <a href="#">Analytics</a>
+          <a href="#">Plugins</a>
+        </div>
+      </div>
+      <a href="#">Server List</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Blogs</a>
+      <a href="#">Enterprise</a>
+      <a href="#">Support</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="btn-login">Log In</button>
+      <button class="btn-cta">Get Started</button>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Products</a>
+    <a href="#">Server List</a>
+    <a href="#">Marketplace</a>
+    <a href="#">Blogs</a>
+    <a href="#">Enterprise</a>
+    <a href="#">Support</a>
+    <div class="mobile-actions">
+      <button class="btn-login">Log In</button>
+      <button class="btn-cta">Get Started</button>
+    </div>
+  </div>
+
+  <!-- STATUS BAR -->
+  <div class="status-bar">
+    <span class="status-pill">
+      <span class="dot"></span>
+      All systems operational
+    </span>
+  </div>
+
+  <!-- YOUR PAGE CONTENT GOES BELOW -->
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
